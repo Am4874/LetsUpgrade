@@ -1,0 +1,90 @@
+// day 2
+
+**Asynchronous Programming in Node.js**
+- understanding Asynchronous operations
+-Explaining the event loop and non-blocking code
+
+        -Callback Functions
+    -Writing and using callback functions in asynchronous code.
+**File System Operations**
+--Reading and Writing Files
+        -Reading and writing files asynchronously with fs module.
+    --Working with Directories
+-Creating, reading, and removing directories.
+
+***Building a simple Command- Line Tools**
+    -Accepting Command-Line Arguments
+        -Parsing and using command-line arguments in a node.js scrip
+    -Creating a Basic Utility
+        -Building a small utility application using Node.js
+
+
+    -Key Players in the Asynchronous
+        -Non Blocking operation
+        -Event Loop
+        -Callback
+        -Queuing
+
+    -Restaurant application
+    synchronous and asynchronous flow
+
+Synchronous Workflow(Slow and inefficient)
+---------------------------
+1. Customer place an order
+2. The app wait for the order to be completes <blocking the System>
+3. Food is prepared
+4. The app receives the completed order updates the ui for the customer XYZ
+5. Customer B places an order
+6. The app waits for Customer XYZ order to finish before taking Customer b order(Blocking)
+7. The process repeats for each customer
+
+7.The efficient flow allows us to handle many customer simultaneous without blocking
+
+    -synchronous Flow (Fast and Scalable)
+    -----------------------------------
+    1.Customer a places an order
+    2. The app sends the order to the kitchen non blocking>
+    3.While the food is being prepared, the app  can also take other order(customer a,b,c other)
+    4.The event loop track the status of each order
+    5.When the Customer A is order is ready,then it will trigger a callback to update the app and notify the customer
+    6.The app continue handling the other orders and callback currently.
+    7.The efficient flow allows us to handle many customer simultaneously without blocking
+
+    ##What is key difference 
+    #Synchronous app need to wait for one hours to complete before the other works start
+    ##Asynchronous the app initiate the task and moves on allowing other task to run simultaneous to concurrently multiple task can run concurrently in the asynchronous programming
+    #The event loop it manage the asynchronous task like
+     -order A
+     -order B
+     -order C
+     -Event Loops(act as tracker and manage the )
+     -Callback trigger when non blocking operation is the order finish
+
+    benefits of Asynchronous programming
+------------------------------------
+    1.Scalability
+    2.Responsiveness
+    3.Efficiency
+
+    writing and using callback functions in asynchronous code.
+    --------------------------------------------------
+    
+
+    --Creating a Basic utility
+    - Building a small utility application using Node.js
+    -Youtube live chat app using Node.js
+
+    project Overview
+    -join a chat room
+    -Send message to chat
+    -See the  message from other participate in real-time
+
+    -Breakdown of the app
+    -Frontend:html,CSS ,JS for user Interface
+    -Backend: Nodejs will handle server-side logic in real time communication
+    -Technologies: 
+            -Express.js Framework
+            -Socket.io library (for real time communication)
+        
+    -Steps
+        -install node n npm 

@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat</title>
+    <title>join the chat</title>
   </head>
   <body>
-    <h1>join the chat</h1>
-    <input type="text" id="chat-id" placeholder="Enter chat id" />
-    <button id="join-btn">join</button>
+    <h1>Join The Chat</h1>
 
-    <div id="message"></div>
-    <input type="text" id="message-input" placeholder="send a message" />
-    <button id="send-msg">send</button>
+    <input type="text" id="chat-id" placeholder="Enter Chat Id" />
+    <button id="join-button">Join</button><br />
+
+    <div id="messages"></div>
+    <input type="text" id="message-Input" placeholder="Send a message" />
+    <button id="send-button">Send</button>
+
+    <script src="socket.io.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

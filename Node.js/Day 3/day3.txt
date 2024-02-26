@@ -1,0 +1,24 @@
+Web server
+restaurant kitchen + serving staffs 
+receives req from server browser
+
+breakdown role of web server:
+1-Customer places order (browser)-
+2-Order travels to kitchen (server)-
+3-kitchen prepares order (processes the request)
+4-Order delivered to customer (response sent)
+5-customer enjoys the meal (displayed in browser)
+
+    Prominent of web server-
+
+        Apache-
+        Nodejs-
+        NGinx-
+
+    Why Nodejs for web development?
+
+    -Event driven architecture
+    -Js everywhere
+    -large community
+
+    Setting up web server

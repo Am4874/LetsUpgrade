@@ -9,11 +9,13 @@
 
 const fs = require("fs");
 //readfile
-// fs.readFile("node.md", "utf-8", (err, data) => {
-//   if (err) {
-    
-//   } else {
-    
+fs.readFile("../topic.txt", "utf-8", (err, data) => {
+  try {
+    console.log(err);
+  } catch {
+    console.log(data);
+  }
+});
 
 //   try {
 //     console.log(err);
@@ -21,7 +23,3 @@ const fs = require("fs");
 //     console.log(data);
 //   }
 //   }
-
-
-
-const fs =
